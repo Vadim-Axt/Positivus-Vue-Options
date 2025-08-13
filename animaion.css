@@ -1,0 +1,16 @@
+@keyframes client-logo-right-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes client-logo-left-right {
+    0% {
+        transform: translateX(-800%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

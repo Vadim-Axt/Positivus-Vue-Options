@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: Inter, sans-serif;
-
 }
 
 #app {
@@ -10,6 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .container {
@@ -21,6 +21,7 @@ header {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
+    background: #FFFFFF;
 }
 .nav-list {
     display: flex;
@@ -60,7 +61,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 22px;
+    font-size: 26px;
     column-gap: 100px;
     position: absolute;
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -70,16 +71,33 @@ header {
 
     h2 {
         color: #28CB8B;
+        margin: 0;
     }
 
     button {
         background: #28CB8B;
         color: #FFF;
         border-radius: 6px;
+        font-size: 24px;
         border: none;
-        padding: 10px 20px;
+        padding: 15px 40px;
     }
 }
+
+.first-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    margin-top: 70px;
+}
+
+.info-container {
+    position: relative;
+    display: flex;
+}
+
+
 .first-page_text {
     flex: 1;
 }
@@ -106,17 +124,46 @@ header {
     justify-content: center;
     margin: 15px 0;
     gap: 8px;
+    flex-basis: 100%;
+    position: absolute;
+    top: 112%;
+    left: 47%;
 }
 
 .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: #ccc;
+    background: #C8E6C9;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 .dot.active {
     background: #28CB8B;
+}
+.client-page {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.client-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px ;
+}
+.client-logos {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-logo-1 {
+    animation: client-logo-left-right .3s cubic-bezier(0.06, 1, 0.91, 1) forwards;
 }
